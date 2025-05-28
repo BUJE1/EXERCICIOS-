@@ -63,6 +63,7 @@ def iniciar_sistema():
             break
         else:
             print("Escolha umas das opções acima.")
+            
 
 iniciar_sistema()
 

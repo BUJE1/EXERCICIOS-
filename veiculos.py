@@ -35,11 +35,11 @@ def mostar_veiculos(veiculos):
     if veiculos:
         for veiculo in veiculos:
             print(f"""
-                  Modelo do veiculo{veiculo["modelo"]}
-                  Ano do veiculo{veiculo["ano"]}
-                  Placa do veiculo{veiculo["placa"]}
-                  Marca do veiculo{veiculo["marca"]}
-                  Cor do veiculo{veiculo["cor"]}
+                  Modelo do veiculo {veiculo["modelo"]}
+                  Ano do veiculo {veiculo["ano"]}
+                  Placa do veiculo {veiculo["placa"]}
+                  Marca do veiculo {veiculo["marca"]}
+                  Cor do veiculo {veiculo["cor"]}
                 f""")
     else:
         print("Não existe veiculo cadastrado")
