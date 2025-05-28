@@ -27,13 +27,13 @@ def cadastar_filme(receber_filme):
     db_filmes.append(receber_filme)
 
     with open(filmes, "w", encoding= "utf-8")as arq_json:
-        json.dump(db_filmes, arq_json, indent=4, ensure_ascii= False,)
+        json.dump(db_filmes, arq_json, indent=4, ensure_ascii= False)
 
 def mostar_filmes(filmes):
     if filmes:
         for filme in filmes:
             print(f"""
-                  Nome do Filme{filme["nome"]})
+                  Nome do Filme{filme["nome"]}
                   Classificação do Filme{filme["classificacao"]}
                   Descrição do Filme{filme["descricao"]}
                   Categoria do Filme{filme["categoria"]}
@@ -55,7 +55,7 @@ def iniciar_sistema():
         opcao = input("Escolha uma Opção:")
 
         if opcao =="1":
-            mostar_filmes()
+            mostar_filmes(db_filmes)
         elif opcao == "2":
             print(obter_dados())
         elif opcao == "3":
@@ -65,7 +65,6 @@ def iniciar_sistema():
             print("Escolha umas das opções acima.")
 
 iniciar_sistema()
-
 
 
 
